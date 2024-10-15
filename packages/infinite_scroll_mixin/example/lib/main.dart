@@ -42,6 +42,7 @@ class _MyHomePageState extends State<MyHomePage> with InfiniteScrollMixin {
       ),
       body: ListView.builder(
         controller: infiniteScrollController,
+        physics: const AlwaysScrollableScrollPhysics(),
         itemCount: items.length + 1,
         itemBuilder: (context, index) {
           if (index == items.length) {
