@@ -9,6 +9,9 @@ help:
 	@echo "  make bump  - 선택한 프로젝트의 버전 증가"
 	@echo "  make bs  - melos bootstrap"
 	@echo "  make generate  - Code generate"
+	@echo "  make build  - 빌드"
+	@echo "  make test  - 테스트"
+	@echo "  make lint  - lint"
 
 
 # 버전 증가
@@ -21,4 +24,13 @@ bs:
 generate:
 	@bash ./scripts/generate.sh $(TARGET)
 
-.PHONY: help bump bs generate
+build:
+	@bash melos run build
+
+test:
+	@bash melos run test
+
+lint:
+	@bash melos run lint
+
+.PHONY: help bump bs generate build test lint
