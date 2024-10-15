@@ -1,0 +1,16 @@
+name: GoRouteWatcher
+description: "A Flutter package that provides a widget that listens to route changes and notifies the user."
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^14.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
