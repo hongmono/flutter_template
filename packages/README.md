@@ -4,3 +4,4 @@
 
 - GoFocusMixin 
 - GoRouteWatcher
+- InfiniteScrollMixin
