@@ -18,12 +18,9 @@ dependencies:
   go_focus_mixin: ^1.0.0
 ```
 
-## Usage
 ```dart
 import 'package:go_focus_mixin/go_focus_mixin.dart';
-```
 
-```dart
 class MyPage extends StatefulWidget {
   @override
   _MyPageState createState() => _MyPageState();
