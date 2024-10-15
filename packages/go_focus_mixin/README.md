@@ -18,9 +18,13 @@ dependencies:
   go_focus_mixin: ^1.0.0
 ```
 
+Import the package in your Dart code:
 ```dart
 import 'package:go_focus_mixin/go_focus_mixin.dart';
+```
 
+Add the mixin to your page class and implement the onFocused and onUnFocused callbacks:
+```dart
 class MyPage extends StatefulWidget {
   @override
   _MyPageState createState() => _MyPageState();
@@ -46,9 +50,10 @@ class _MyPageState extends State<MyPage> with GoFocusMixin {
 }
 ```
 
+initialize the GoFocusWatcher instance with a GoRouter instance:
 ```dart
-final router = GoRouter(
-  routes: [...]
+final GoRouter router = GoRouter(
+  // Route configuration
 );
 
 void main() {
@@ -57,6 +62,3 @@ void main() {
   runApp(App());
 }
 ```
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
