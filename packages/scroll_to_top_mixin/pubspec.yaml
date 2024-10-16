@@ -1,0 +1,15 @@
+name: scroll_to_top_mixin
+description: "A Flutter package that provides a mixin to scroll to the top of a ListView, GridView, or CustomScrollView."
+version: 1.0.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

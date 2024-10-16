@@ -5,3 +5,4 @@
 - GoFocusMixin 
 - GoRouteWatcher
 - InfiniteScrollMixin
+- ScrollToTopMixin

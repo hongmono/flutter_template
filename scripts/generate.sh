@@ -2,18 +2,6 @@
 
 APPS_DIR="apps"
 
-PROJECT=$1
-
-echo "$PROJECT"
-
-# PROJECT 가 있을 경우
-if [ -n "$PROJECT" ]; then
-    if [ -d "$APPS_DIR/$PROJECT" ]; then
-        bash scripts/generate_egrit.sh
-    fi
-    exit 0
-fi
-
 # Git 저장소 확인
 if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
     echo "오류: 현재 디렉토리가 Git 저장소가 아닙니다."
@@ -39,7 +27,8 @@ fi
 if [[ "$choice" =~ ^[0-9]+$ ]] && [ "$choice" -ge 1 ] && [ "$choice" -le "${#PROJECTS[@]}" ]; then
     case "$choice" in
       1)
-        bash scripts/generate_egrit.sh
+        cd "apps/${PROJECTS[$choice - 1]}" || exit
+        dart run build_runner build --delete-conflicting-outputs
         ;;
     esac
 else
