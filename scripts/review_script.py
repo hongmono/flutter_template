@@ -9,7 +9,7 @@ def review_code_with_claude(file_content):
         'Content-Type': 'application/json'
     }
     data = {
-        'model': 'claude-3-sonnet-20240229',
+        'model': 'llama-3-sonar-large-32k-online',
         'messages': [
             {'role': 'system', 'content': '''당신은 경험 많은 시니어 개발자이자 코드 리뷰어입니다. 주어진 코드 변경사항을 철저히 분석하고, 다음 사항들을 중점적으로 검토하여 개선점을 제안해주세요:
 
@@ -24,7 +24,6 @@ def review_code_with_claude(file_content):
 리뷰는 한글로 작성하며, 건설적이고 구체적인 피드백을 제공해주세요. 긍정적인 부분도 언급하여 균형 잡힌 리뷰를 해주세요.'''},
             {'role': 'user', 'content': f'다음 코드 변경사항을 리뷰해주세요:\n\n{file_content}'}
         ],
-        'max_tokens': 1500
     }
     try:
         response = requests.post('https://api.perplexity.ai/chat/completions', headers=headers, json=data)
