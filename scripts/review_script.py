@@ -11,7 +11,7 @@ def review_code(file_content):
     data = {
         'model': 'mistral-7b-instruct',
         'messages': [
-            {'role': 'system', 'content': '당신은 코드 리뷰어입니다. 주어진 코드를 분석하고 개선점을 제안해주세요.'},
+            {'role': 'system', 'content': '당신은 코드 리뷰어입니다. 주어진 코드를 분석하고 개선점을 제안해주세요. 리뷰는 한글로 진행해 주세요'},
             {'role': 'user', 'content': f'다음 코드를 리뷰해주세요:\n\n{file_content}'}
         ]
     }
