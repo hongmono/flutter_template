@@ -1,4 +1,4 @@
-name: GoFocusMixin
+name: go_focus_mixin
 description: "A Flutter mixin that provides onFocused and onUnFocused callbacks for pages registered with go_router, enabling easy tracking of page focus states."
 version: 1.0.0
 

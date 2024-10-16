@@ -1,5 +1,5 @@
-name: go_route_watcher
-description: "A Flutter package that provides a widget that listens to route changes and notifies the user."
+name: log_execution_time
+description: "Measures the execution time of a function and outputs it to a log."
 version: 1.0.0
 
 environment:
@@ -9,7 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  go_router: ^14.3.0
 
 dev_dependencies:
   flutter_test:

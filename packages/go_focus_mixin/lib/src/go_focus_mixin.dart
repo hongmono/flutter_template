@@ -1,4 +1,4 @@
-import 'package:GoFocusMixin/src/go_focus_watcher.dart';
+import 'package:go_focus_mixin/src/go_focus_watcher.dart';
 import 'package:flutter/material.dart';
 
 mixin GoFocusMixin<T extends StatefulWidget> on State<T> {

@@ -1,4 +1,4 @@
-import 'package:GoFocusMixin/src/go_focus_mixin.dart';
+import 'package:go_focus_mixin/src/go_focus_mixin.dart';
 import 'package:go_router/go_router.dart';
 
 /// Singleton class for watching focused page. using GoRouter

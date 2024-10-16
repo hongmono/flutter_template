@@ -5,3 +5,13 @@ environment:
 
 dev_dependencies:
     melos: ^6.2.0
+
+dependency_overrides:
+    go_focus_mixin:
+        path: packages/go_focus_mixin
+    go_route_watcher:
+        path: packages/go_route_watcher
+    infinite_scroll_mixin:
+        path: packages/infinite_scroll_mixin
+    scroll_to_top_mixin:
+        path: packages/scroll_to_top_mixin
