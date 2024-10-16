@@ -7,3 +7,4 @@
 - InfiniteScrollMixin
 - ScrollToTopMixin
 - LogExecutionTime
+- AsyncQueue

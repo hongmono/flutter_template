@@ -17,3 +17,5 @@ dependency_overrides:
         path: packages/scroll_to_top_mixin
     log_execution_time:
         path: packages/log_execution_time
+    async_queue:
+        path: packages/async_queue
