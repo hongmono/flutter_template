@@ -9,7 +9,7 @@ def review_code(file_content):
         'Content-Type': 'application/json'
     }
     data = {
-        'model': 'claude-3-sonnet-20240229',
+        'model': 'llama-3.1-sonar-large-128k-online',
         'messages': [
             {'role': 'system', 'content': '당신은 코드 리뷰어입니다. 주어진 코드 변경사항을 분석하고 개선점을 제안해주세요. 리뷰는 한글로 진행해 주세요'},
             {'role': 'user', 'content': f'다음 코드 변경사항을 리뷰해주세요:\n\n{file_content}'}
