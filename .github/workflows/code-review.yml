@@ -6,10 +6,11 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
-  code-review:
-    runs-on: ubuntu-20.04
+  code_review:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Python 설정
