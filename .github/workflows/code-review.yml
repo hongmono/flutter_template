@@ -1,28 +1,29 @@
-name: python_test
+name: PR 코드 리뷰
 
 on:
-  push:
-    branches: [main]
+  pull_request:
+    branches: [ main, develop ]
+
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
-  build:
+  code_review:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set up Python 3.x
-        uses: actions/setup-python@v5
+      - name: Python 설정
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
-
-      - name: Install dependencies
+          python-version: '3.11'
+      - name: 의존성 설치
         run: |
           python -m pip install --upgrade pip
           pip install requests PyGithub
-
-      - name: Run Code Review
+      - name: 코드 리뷰 실행
         env:
           PPLX_API_KEY: ${{ secrets.PPLX_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-        run: python scripts/code-review.py
+        run: |
+          python scripts/review_script.py
