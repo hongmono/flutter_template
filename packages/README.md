@@ -6,3 +6,4 @@
 - GoRouteWatcher
 - InfiniteScrollMixin
 - ScrollToTopMixin
+- LogExecutionTime

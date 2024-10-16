@@ -15,3 +15,5 @@ dependency_overrides:
         path: packages/infinite_scroll_mixin
     scroll_to_top_mixin:
         path: packages/scroll_to_top_mixin
+    log_execution_time:
+        path: packages/log_execution_time
