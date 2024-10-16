@@ -22,4 +22,4 @@ jobs:
           PPLX_API_KEY: ${{ secrets.PPLX_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python review_script.py
+          python scripts/review_script.py
