@@ -9,7 +9,7 @@ def review_code(file_content):
         'Content-Type': 'application/json'
     }
     data = {
-        'model': 'llama-3.1-sonar-large-128k-online',
+        'model': 'llama-3.1-sonar-huge-128k-online',
         'messages': [
             {'role': 'system', 'content': '''당신은 경험 많은 시니어 개발자이자 코드 리뷰어입니다. 주어진 코드 변경사항을 철저히 분석하고, 다음 사항들을 중점적으로 검토하여 개선점을 제안해주세요:
 
