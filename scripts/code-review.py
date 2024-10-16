@@ -32,6 +32,15 @@ def get_changed_files():
         commit = repo.get_commit(os.environ['GITHUB_SHA'])
         return [file.filename for file in commit.files]
 
+def get_file_content(filepath):
+    try:
+        with open(filepath, 'r', encoding='utf-8') as file:
+            return file.read()
+    except FileNotFoundError:
+        return f'파일을 찾을 수 없습니다: {filepath}'
+    except Exception as e:
+        return f'파일 읽기 오류: {str(e)}'
+
 def main():
     changed_files = get_changed_files()
     for file in changed_files:
