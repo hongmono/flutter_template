@@ -1,0 +1,9 @@
+name: _
+publish_to: none
+environment:
+  sdk: ^3.6.0
+workspace:
+  - packages/async_queue
+  - packages/infinite_scroll_mixin
+  - packages/log_execution_time
+  - packages/scroll_to_top_mixin

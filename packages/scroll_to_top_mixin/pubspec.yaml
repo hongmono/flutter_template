@@ -3,7 +3,7 @@ description: "A Flutter package that provides a mixin to scroll to the top of a 
 version: 1.0.0
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=3.6.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -13,3 +13,5 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+resolution: workspace
